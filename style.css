@@ -1,0 +1,473 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    background-image: url("img/wave.svg");
+    background-repeat: no-repeat;    
+    height: 100vh;
+    
+}
+
+
+.containerInfo{
+    margin: 30px 30px 30px 30px;
+   
+}
+
+/*Profile and navbar*/
+
+.link{
+    font-size: 1.5rem;
+    color: white;
+    margin-left: 2rem;
+    padding: 0.6rem;
+    position: relative;
+}
+
+.link::after{
+    content: "";
+    width: 0;
+    height: 4px;
+    background-color: rgb(94, 117, 219);
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transition: all 1s;
+    will-change: width;
+}
+
+.link:hover:after{
+    width: 100%;
+    right: 0;
+}
+
+.active{
+    color: rgb(11, 145, 255);
+}
+
+.navbar-dark{
+    color: #273036;
+}
+
+/*About me*/
+.about{
+    width: 100%;
+    padding: 30px;
+    margin: 5rem auto;  
+   
+}
+
+.info{
+    width: 50%;
+    margin-right:5rem ;
+    float: left;
+}
+
+.textAbout{
+    padding: 10px;
+    color:rgb(255, 255, 255);
+    font-size: 22px;
+    font-family: 'Playfair Display', serif; 
+    text-align: justify;   
+}
+
+#circulo{
+  z-index: -1;
+  height:330px;
+  width:330px;
+  background: rgba(255, 255, 255, 0.062);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 ); 
+  border-radius:50%;
+  position: fixed;
+  margin-left: 1rem;
+  margin-top: 4rem;
+}
+
+.imgContainer{
+    overflow: hidden;
+    width: 25rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.imgContainer img{
+    width:90%;
+    padding: 1rem;
+    border-radius:50%;
+    margin-left: 1rem;
+    margin-right: auto;
+    display: block;
+    transition:all .5s ease-in-out;
+    filter: grayscale(90%);
+}
+
+.imgContainer img:hover{
+border-radius:10%;
+filter: grayscale(0);
+transform: scale(1.2);
+margin-bottom: 1.5rem;
+}
+
+.tittle{
+    font-size: 4rem;
+    margin-bottom: .5rem;
+    margin-left: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(11, 145, 255);
+}
+
+.tittle2{
+    margin-bottom: .5rem;
+    margin-left: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(11, 145, 255);
+}
+
+.btn{
+    font-size: 1.3rem;
+}
+
+
+
+
+/*certification*/
+
+.certification{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.certf{
+width:30%;
+padding: 2rem;
+background: rgba( 255, 255, 255, 0.1 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 14px );
+-webkit-backdrop-filter: blur( 14px );
+border-radius: 15px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+float: left;
+}
+
+.contenedor{
+    overflow: hidden;
+    width:65%;
+    height: 40rem;
+    padding: 2rem;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+
+}
+.card{
+    position: absolute;
+    width: 90%;
+    height: 33rem;
+    display: grid;
+    place-items: center;
+    border-left: rgba(255, 255, 255, 0.342) 1px solid;
+    border-top: rgba(255, 255, 255, 0.342) 1px solid;
+    border-radius: 20px;
+    backdrop-filter: blur(30px);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
+    color: rgb(0, 0, 0);
+    backface-visibility: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+    transition: 2.5s cubic-bezier(0.4, 0.2, 0.2, 1);
+    
+}
+
+.imgExcel{
+    width: 30rem;
+}
+
+.nasa .tittle{
+    font-size:3rem ;
+}
+
+.cardS{
+    
+    border-radius: 1rem;
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 14px );
+    -webkit-backdrop-filter: blur( 14px );
+    border-radius: 15px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.front{
+    background: rgba(255, 255, 255, 0.109);
+    transform: rotateY(0deg);
+    padding: 1rem;
+}
+
+.back{
+    background: rgba(255, 255, 255, 0.109);
+    transform: rotateY(180deg);
+    padding: 1rem;
+}
+.contenedor:hover > .front{
+    transform: rotateY(-180deg);
+}
+.contenedor:hover > .back{
+    transform: rotateY(0deg);
+}
+.btn{
+    border: 1px solid white;
+    background: rgba(255, 255, 255, 0.21);
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: all 0.5s;
+}
+.btn:hover{
+    padding: 10px 40px;
+    background: white;
+    color:black
+}
+
+
+
+.dropdown-item{
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+
+@keyframes aparecer { 
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .contenedor {
+    animation: aparecer 2s ;
+  }
+
+  /*Skills*/
+
+  .skills{
+    width: 100%;
+    padding: 2rem;
+    margin: auto;
+    overflow: hidden;
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 14px );
+    -webkit-backdrop-filter: blur( 14px );
+    border-radius: 15px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    color: white;
+}
+
+.skill{
+    width:28.2rem;
+    float: left;
+    margin-right: 10rem;
+}
+
+.candidatos{
+    position: relative; 
+    margin-bottom: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.candidatos .parcial{
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+}
+
+
+.candidatos .parcial .info{
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.candidatos .parcial .info .nome{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 20px;
+    font-weight: 400;
+    opacity: 0.9;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.candidatos .parcial .info .percentage-num{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.candidatos .parcial .progressBar{
+    position: relative;
+    width: 100%;
+    height: .5rem;
+    margin: 30px 0 2px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.candidatos .parcial .percentagem{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: .5rem;
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;    
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    background: #0b80ce;
+    -webkit-transition: 3s all;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-name: animationProgress ;
+    animation-name: animationProgress;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+}
+
+@keyframes animationProgress{
+    from{
+        width: 0;
+    }
+}
+
+/*carrusel*/
+
+.lenguages{
+    overflow: hidden;
+    width: 25rem;
+}
+
+/*contact*/
+.contact{
+    width: 44rem;
+    color: white;
+    background: rgba(255, 255, 255, 0.733);
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    margin: 5rem auto;
+    text-align: center;
+}
+
+/*medias*/
+
+@media (max-width:75rem) {
+    .info{
+        margin-right: 2rem;
+    }
+
+    .lenguages{
+        width: 20rem;
+    }
+
+    .skill{
+        
+        margin-right: 5rem;
+    }
+}
+
+@media (max-width:62.5rem){
+
+    .about{
+        margin-top: 0;
+    }
+    .info{
+        width: 100%;
+    }
+
+    .imgContainer{
+        margin: auto;
+        padding: 0;
+        width: 100%;
+    }
+
+    .imgContainer img{
+        margin: auto;
+        width: 70%;
+    }
+
+    .containerInfo{
+        margin: auto
+       
+    }
+
+    body{
+        background-image: url(img/waveResponsive.svg);
+    }
+
+
+
+    .contenedor{
+        width: 100%;
+        position: relative;
+        left: -1rem;
+    }
+
+    .certf{
+        width: 100%;
+    }
+
+    .imgExcel{
+        width: 25rem;
+    }
+
+    .cardS{
+        position: relative;
+        top: -1.5rem;
+    }
+
+
+    .skill{
+        width: 100%;
+    }
+
+    .lenguages{
+        width: 100%;
+        margin: auto;
+    }
+
+    .contact{
+        width: 100%;
+    }
+ 
+}
+
+@media (max-width:46.875rem){
+    
+    .tittle{
+        font-size: 2rem;
+    }
+
+    .imgExcel{
+        width: 100%;
+    }
+
+    .nasa .tittle{
+        font-size: 1.5rem;
+    }
+
+    .textAbout{
+        font-size: 1rem;
+    }
+}
