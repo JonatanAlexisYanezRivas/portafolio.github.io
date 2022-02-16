@@ -410,8 +410,6 @@ float: left;
 
     .contenedor{
         width: 100%;
-        position: relative;
-        left: -1rem;
     }
 
     .certf{
@@ -425,6 +423,12 @@ float: left;
     .cardS{
         position: relative;
         top: -1.5rem;
+        border-left: rgba(255, 255, 255, 0.342) 1px solid;
+        border-top: rgba(255, 255, 255, 0.342) 1px solid;
+        border-radius: 20px;
+        backdrop-filter: blur(30px);
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
+        color: rgb(0, 0, 0);
     }
 
 
@@ -463,7 +467,6 @@ float: left;
 
     .contenedor{
         width: 100%;
-        padding-right: 0;
     }
 
     .cardS{
