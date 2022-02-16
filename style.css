@@ -195,16 +195,6 @@ float: left;
     font-size:3rem ;
 }
 
-.cardS{
-    
-    border-radius: 1rem;
-    background: rgba( 255, 255, 255, 0.1 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 14px );
-    -webkit-backdrop-filter: blur( 14px );
-    border-radius: 15px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-}
 .front{
     background: rgba(255, 255, 255, 0.109);
     transform: rotateY(0deg);
@@ -469,5 +459,16 @@ float: left;
 
     .textAbout{
         font-size: 1rem;
+    }
+
+    .contenedor{
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .cardS{
+        text-align: center;
+        margin: auto;
+        padding: 0;
     }
 }
