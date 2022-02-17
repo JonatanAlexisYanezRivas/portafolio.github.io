@@ -1,0 +1,44 @@
+{
+    "profile":{
+        "rol": "Hola, soy Jonatan Programador",
+        "description": "Soy una persona apasionada por el desarrollo de aplicaciones web. Me gusta crear aplicaciones/programas desde cero, esto hace que me interese por nuevas tecnologias y seguir aprendiendo constantemente.",
+        "cv":"Descargar CV"
+    },
+    "nav":{
+        "nav-1":"Acerda de mi",
+        "nav-2":"Educación y certificaciones",
+        "nav-3":"Habilidades",
+        "nav-4":"Contactame"
+    },
+    "tittle-education":{
+        "education":"Educación",
+        "schools": "Estudios",
+        "certifications":"Certificaciones",
+        "recognitions":"Reconocimientos"
+    },
+    "text-card":{
+        "excel": "Curso especializado en Excel completado en 2017",
+        "powerpoint": "Curso especializado en PowerPoint completado en 2017",
+        "word": "Curso especializado en Word completado en 2017",
+        "azure":"Curso especializado en Azure completado en 2022",
+        "see": "Ver certificado en Certiport"
+    },
+    "azure-ul":{
+        "li-1": "Comprendo conceptos de la nube.",
+        "li-2":"Conozco la diferencia entre los modelos de nubes pública, privada e hibrida",
+        "li-3":"Entiendo los servicios básicos de Azure",
+        "li-4":"Se las diferencias entre Infrestructura como servicio (IaaS), plataforma como servicio (PaaS), y software como servicio (SaaS)"
+    },
+    "text-recognitions":{
+        "text-risk":"Esta aplicación web se desarrollo con varios lenguajes de programación como HTML, CSS, JavaScript para el diseño y funcionalidad de la página. También se utilizo Python para el manejo de datos. <br> El reto fue utilizar información pública del gobierno en este caso de México para desarrollar una calculadora de riesgo de covid con la finalidad de dar a entender al usario el nivel de riesgo que tiene tomando en cuenta diferentes factores. Además de proporcionar unas recomoendaciones para evitar posibles contagios.",
+        "text-instructor":"Impartí cursos a docentes de nivel medio superior sobre plataformas digitales, durante seís meses en la plataforma de Teams"
+    },
+    "contact":{
+        "name_":"Nombre",
+        "email_":"Correo",
+        "company_":"Empresa",
+        "asunt_":"Asunto",
+        "submit_":"Enviar"
+    }
+    
+}

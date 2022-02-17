@@ -1,0 +1,44 @@
+{
+    "profile":{
+        "rol": "Hi, I´m Jonatan \n Programeer",
+        "description": "I am a person passionate about web application development. I like to take advantage of all available online resources in order to be a developer capable of finding sophisticated solutions to complex problems.",
+        "cv":"Download CV"
+    },
+    "nav":{
+        "nav-1":"About me",
+        "nav-2":"Education and Certification",
+        "nav-3":"Skills",
+        "nav-4":"Contact me"
+    },
+    "tittle-education":{
+        "education":"Education",
+        "schools": "Schools",
+        "certifications":"Certifications",
+        "recognitions":"Reconognitions"
+    },
+    "text-card":{
+        "excel": "Specialization course in Excel completed in 2017",
+        "powerpoint": "Specialization course in PowerPoint completed in 2017",
+        "word": "Specialization course in Word completed in 2017",
+        "azure":"Specialization course in Azure completed in 2021",
+        "see": "See certificate in Certiport"
+    },
+    "azure-ul":{
+        "li-1": "Understand cloud concepts.",
+        "li-2":"Describe the differences between public, private, and hybrid cloud models.",
+        "li-3":"Understand core Azure services.",
+        "li-4":"Describe the differences between infrastructure as a service (IaaS), platform as a service (PaaS), and software as a service (SaaS)."
+    },
+    "text-recognitions":{
+        "text-risk":"This web application containts a lot of lenguages such as HTML, CSS, JavaScript to design the web page and python for data manipulation.<br> Challenge is to use open-source environmental data and other open-source information (such as epidemiological, social, policy and economic data) as available to build and demonstrate a prototype smartphone application that can provide individualized, geolocated, COVID-19 risk warnings to guide social awareness, response, and health security.",
+        "text-instructor":"I gave classes to teachers of level middle superior about educational platforms for six mounths in the plaform Teams"
+    },
+    "contact":{
+        "name_":"Name",
+        "email_":"Email",
+        "company_":"Company",
+        "asunt_":"Asunt",
+        "submit_":"Submit"
+    }
+    
+}

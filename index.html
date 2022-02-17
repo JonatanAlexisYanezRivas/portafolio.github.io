@@ -90,27 +90,38 @@
 </head>
 <body>
      
-
+<header>
     <div class="full_info_wrap">
         <div class="tabs">
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <div class="container-fluid">
-                <a class="navbar-brand">Portfolio</a>
+                    <div id="flags" class="flags">
+                        <div class="flags-item" data-language="es">
+                            <img src="img/mx.svg" alt="" class="flags-img mex">
+                        </div>
+                        
+                        <div class="flags-item" data-language="en">
+                            <img src="img/um.svg" alt="" class="flags-img eu">
+                        </div>
+                    </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
-                        <li data-li="about" class="active link">About me</li>
-                        <li data-li="certification" class="link">Education and Certification</li>
-                        <li data-li="skills" class="link"></script>Skills</li>
-                        <li data-li="contact" class="link">Contact</li>
+                        <li data-li="about" class="active link" data-section="nav" data-value="nav-1">About me</li>
+                        <li data-li="certification" class="link" data-section="nav" data-value="nav-2">Education and Certification</li>
+                        <li data-li="skills" class="link" data-section="nav" data-value="nav-3"></script>Skills</li>
+                        <li data-li="contact" class="link" data-section="nav" data-value="nav-4">Contact</li>
                     </ul>
                 </div>
                 </div>
             </nav>
         </div class="tabs">
     </div class="full_info_wrap">
+
+    
+</header>
 
        
     
@@ -119,34 +130,20 @@
 
     <!-- About Me <div id="circulo"></div> -->
 
-    <section class="container">
-        <div class="full_info_item about" >
-            <div class="info">
-                
-                <h1 class="tittle">About Me</h1>
-                <h3 class="tittle">Hi, I'm Jonatan</h3> <br>
-                <p class="textAbout">I am a person passionate about web application development. I like to take advantage of all available online resources in order to be a developer capable of finding sophisticated solutions to complex problems.</p>
-               <!-- <p class="textAbout">I started programming in 2018, throughout my university career I have carried out several projects, participated in several programming events and have handled several languages.
-                </p>
-
-                <p class="textAbout">If you are interested in working with me or hiring me, you can contact me through my email or my social networks.</p>
-                -->
-            </div>
-
-            <div class="imgContainer">
-                <img src="img/foto.jfif" alt="">
-                <a href="CV/CV- Yañez Rivas Jonatan Alexis.pdf" download="CV" class="btn btn-primary bg-light">Download CV</a>
-                
-            </div>
-             <!-- 
-            <div class="imgContainer">
-               
-                <h2>CV</h2>
-                <iframe src="CV/CV- Yañez Rivas Jonatan Alexis.pdf" frameborder="0" class="CV"></iframe>
-            </div>
-            PDF-->
+<section class="container">
+    <div class="full_info_item about" >
+        <div class="info">
+            <h1 class="tittle" data-section="profile" data-value="rol">Hi, I'm Jonatan</h1> <br>
+            <p class="textAbout" data-section="profile" data-value="description">I am a person passionate about web application development. I like to take advantage of all available online resources in order to be a developer capable of finding sophisticated solutions to complex problems.</p>
         </div>
-    </section>
+
+        <div class="imgContainer">
+            <img src="img/foto.jfif" alt="">
+            <a href="CV/CV- Yañez Rivas Jonatan Alexis.pdf" download="CV" class="btn btn-primary bg-light" data-section="profile" data-value="cv">Download CV</a>
+            
+        </div>
+    </div>
+</section>
     <!-- Certification -->
 
 <section class="container">
@@ -157,14 +154,14 @@
             <div class="certf">
                 
             <ul class="list-group">
-                <h1 class="tittle2">Education</h1>
-                <li data-li="schools" class="active dropdown-item">Schools</li>
-                <h1 class="tittle2">Certifications</h1>
+                <h1 class="tittle2" data-section="tittle-education" data-value="education">Education</h1>
+                <li data-li="schools" class="active dropdown-item" data-section="tittle-education" data-value="schools">Schools</li>
+                <h1 class="tittle2" data-section="tittle-education" data-value="certifications">Certifications</h1>
                 <li data-li="excel" class="dropdown-item">Excel</li>
                 <li data-li="power" class="dropdown-item">PowerPoint</li>
                 <li data-li="word" class="dropdown-item">Word</li>
                 <li data-li="azure" class="dropdown-item">Azure</li>
-                <h1 class="tittle2">Recognitions</h1>
+                <h1 class="tittle2" data-section="tittle-education" data-value="recognitions">Recognitions</h1>
                 <li data-li="nasa" class="dropdown-item">Nasa Space Apps <br> Challenge</li>
                 <li data-li="instructor" class="dropdown-item">Instructor</li>
             
@@ -175,7 +172,7 @@
         <div class="full_info_certification schools">
             <div class="contenedor">
                 <div class="cardS school">
-                    <h1 class="tittle">Schools</h1>
+                    <h1 class="tittle" data-section="tittle-education" data-value="schools">Schools</h1>
                     <div class="listSchool">
                     <ul class="textAbout" style="list-style: none;">
                         <li>
@@ -204,8 +201,8 @@
                  </div>
                 <div class="card back">
                     <h1 class="tittle">Excel</h1>
-                    <p class="textAbout">Specialization course in excel completed in 2017</p>
-                    <a href="https://www.certiport.com/Portal/Pages/PrintTranscriptInfo.aspx?action=Cert&id=192&cvid=CZeToeE/dyzLKB4l1Jb7yQ==" class="btn">See certificate in certiport</a>
+                    <p class="textAbout" data-section="text-card" data-value="excel">Specialization course in excel completed in 2017</p>
+                    <a href="https://www.certiport.com/Portal/Pages/PrintTranscriptInfo.aspx?action=Cert&id=192&cvid=CZeToeE/dyzLKB4l1Jb7yQ==" class="btn" data-section="text-card" data-value="see">See certificate in certiport</a>
                 </div>
             </div>
 
@@ -220,8 +217,8 @@
                  </div>
                 <div class="card back">
                     <h1 class="tittle">PowerPoint</h1>
-                    <p class="textAbout">Specialization course in PowerPoint completed in 2017</p>
-                    <a href="https://www.certiport.com/Portal/Pages/PrintTranscriptInfo.aspx?action=Cert&id=193&cvid=W4LQovoTzeMJbNRPhQ3XsQ==" class="btn">See certificate in certiport</a>
+                    <p class="textAbout" data-section="text-card" data-value="powerpoint">Specialization course in PowerPoint completed in 2017</p>
+                    <a href="https://www.certiport.com/Portal/Pages/PrintTranscriptInfo.aspx?action=Cert&id=193&cvid=W4LQovoTzeMJbNRPhQ3XsQ==" class="btn" data-section="text-card" data-value="see">See certificate in certiport</a>
                 </div>
             </div>
         </div>
@@ -235,8 +232,8 @@
                  </div>
                 <div class="card back">
                     <h1 class="tittle">Word</h1>
-                    <p class="textAbout">Specialization course in Word completed in 2017</p>
-                    <a href="https://www.certiport.com/Portal/Pages/PrintTranscriptInfo.aspx?action=Cert&id=191&cvid=ifUZvOxwHpamakCRnoNsBQ==" class="btn">See certificate in certiport</a>
+                    <p class="textAbout" data-section="text-card" data-value="word">Specialization course in Word completed in 2017</p>
+                    <a href="https://www.certiport.com/Portal/Pages/PrintTranscriptInfo.aspx?action=Cert&id=191&cvid=ifUZvOxwHpamakCRnoNsBQ==" class="btn" data-section="text-card" data-value="see">See certificate in certiport</a>
                 </div>
             </div>
         </div>
@@ -250,14 +247,14 @@
                  </div>
                 <div class="card back">
                     <h1 class="tittle">Azure</h1>
-                    <p class="textAbout">Specialization course in Azure completed in 2021</p>
+                    <p class="textAbout" data-section="text-card" data-value="azure">Specialization course in Azure completed in 2021</p>
                         <ul class="textAbout">
-                            <li>Understand cloud concepts.</li>
-                            <li>Describe the differences between public, private, and hybrid cloud models.</li>
-                            <li>Understand core Azure services.</li>
-                            <li>Describe the differences between infrastructure as a service (IaaS), platform as a service (PaaS), and software as a service (SaaS)</li>
+                            <li data-section="azure-ul" data-value="li-1">Understand cloud concepts.</li>
+                            <li data-section="azure-ul" data-value="li-2">Describe the differences between public, private, and hybrid cloud models.</li>
+                            <li data-section="azure-ul" data-value="li-3">Understand core Azure services.</li>
+                            <li data-section="azure-ul" data-value="li-4">Describe the differences between infrastructure as a service (IaaS), platform as a service (PaaS), and software as a service (SaaS)</li>
                         </ul>
-                    <a href="https://www.certiport.com/Portal/Pages/PrintTranscriptInfo.aspx?action=Cert&id=414&cvid=qcNP9e0sQOd19y+WzJ1Yng==" class="btn">See certificate in certiport</a>
+                    <a href="https://www.certiport.com/Portal/Pages/PrintTranscriptInfo.aspx?action=Cert&id=414&cvid=qcNP9e0sQOd19y+WzJ1Yng==" class="btn" data-section="text-card" data-value="see">See certificate in certiport</a>
                 </div>
             </div>
         </div>
@@ -270,7 +267,7 @@
                  </div>
                 <div class="card back">
                     <h1 class="tittle">COVID-19: CALCULATE THE RISK</h1>
-                    <p class="textAbout">This web application containts a lot of lenguages such as HTML, CSS, JavaScript to design the web page and python for data manipulation. <br>
+                    <p class="textAbout" data-section="text-recognitions" data-value="text-risk">This web application containts a lot of lenguages such as HTML, CSS, JavaScript to design the web page and python for data manipulation. <br>
                     Challenge is to use open-source environmental data and other open-source information (such as epidemiological, social, policy and economic data) as available to build and demonstrate a prototype smartphone application that can provide individualized, geolocated, COVID-19 risk warnings to guide social awareness, response, and health security.</p>
                 </div>
             </div>
@@ -285,8 +282,7 @@
                  </div>
                 <div class="card back" style="text-align: center;">
                     <h1 class="tittle">Instructor in digital skills courses</h1>
-                    <p class="textAbout">
-                        I gave classes to teachers of level middle superior about educational platforms for six mounths in the plaform "teams"
+                    <p class="textAbout" data-section="text-recognitions" data-value="text-risk">I gave classes to teachers of level middle superior about educational platforms for six mounths in the plaform "teams"
                     </p>
                 </div>
             </div>
@@ -300,7 +296,7 @@
 <section class="container">
 
    <div class="full_info_item skills" style="display: none;">
-    <h1 class="tittle">Skills</h1>
+    <h1 class="tittle" data-section="nav" data-value="nav-3">Skills</h1>
 
     <div class="skill">
 
@@ -449,28 +445,28 @@
 
         <form name="formulario" netlify>
             <div class="mb-3">
-                <label for="name" class="form-label">Name</label>
+                <label for="name" class="form-label" data-section="contact" data-value="name_">Name</label>
                 <input type="text" class="form-control" name="name" id="name" placeholder="ej: Jonatan" required>
             </div>
             <div class="mb-3">
-            <label for="email" class="form-label">Email address</label>
+            <label for="email" class="form-label" data-section="contact" data-value="email_">Email address</label>
             <input type="email" class="form-control" name="email" id="email" placeholder="ej: Jonatan@outlook.com" required>
             </div>
             <div class="mb-3">
-                <label for="company" class="form-label">Company</label>
+                <label for="company" class="form-label" data-section="contact" data-value="company_">Company</label>
                 <input type="text" class="form-control" name="company" id="company">
             </div>
             <div class="mb-3">
-            <label for="asunt" class="form-label">Asunt</label>
+            <label for="asunt" class="form-label" data-section="contact" data-value="asunt_">Asunt</label>
             <textarea class="form-control" placeholder="Leave a comment here" name="asunt" id="asunt"></textarea>
             </div>
-            <button id="sendEmail"type="submit" class="btn btn-primary">Submit</button>
+            <button id="sendEmail"type="submit" class="btn btn-primary" data-section="contact" data-value="submit_">Submit</button>
         </form>
         <script src="js/Form.js"></script>
     </div>
 </section>
 </div>
 
-
+<script src="js/lenguages.js"></script>
 </body>
 </html>
